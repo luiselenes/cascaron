@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".listainsumos">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:gravity="center"
+        android:text="No. Lista"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:autoSizeMaxTextSize="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/et_nolista"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_nolista" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Clave:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_clave"
+        app:layout_constraintEnd_toEndOf="@+id/textView41"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toTopOf="@+id/et_clave" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Partida:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_partida"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toTopOf="@+id/et_partida" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Cantidad:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_cantidad"
+        app:layout_constraintEnd_toEndOf="@+id/textView38"
+        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintTop_toTopOf="@+id/et_cantidad" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="86dp"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="Nombre insumo:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_nombreinsumo"
+        app:layout_constraintEnd_toEndOf="@+id/textView37"
+        app:layout_constraintStart_toStartOf="@+id/textView37"
+        app:layout_constraintTop_toTopOf="@+id/et_nombreinsumo" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="112dp"
+        android:layout_height="67dp"
+        android:gravity="center"
+        android:text="Modulo Destino:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:autoSizeMaxTextSize="@dimen/fab_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/et_modulo"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/et_modulo" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="81dp"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:text="Unidad Medida:"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_unidad"
+        app:layout_constraintEnd_toEndOf="@+id/textView39"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView39"
+        app:layout_constraintTop_toTopOf="@+id/et_unidad" />
+
+    <EditText
+        android:id="@+id/et_modulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/et_nolista" />
+
+    <EditText
+        android:id="@+id/et_clave"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_modulo"
+        app:layout_constraintStart_toStartOf="@+id/et_modulo"
+        app:layout_constraintTop_toBottomOf="@+id/et_modulo" />
+
+    <EditText
+        android:id="@+id/et_nombreinsumo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_clave"
+        app:layout_constraintStart_toStartOf="@+id/et_clave"
+        app:layout_constraintTop_toBottomOf="@+id/et_clave" />
+
+    <EditText
+        android:id="@+id/et_partida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_nombreinsumo"
+        app:layout_constraintStart_toStartOf="@+id/et_nombreinsumo"
+        app:layout_constraintTop_toBottomOf="@+id/et_nombreinsumo" />
+
+    <EditText
+        android:id="@+id/et_cantidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_partida"
+        app:layout_constraintStart_toStartOf="@+id/et_partida"
+        app:layout_constraintTop_toBottomOf="@+id/et_partida" />
+
+    <EditText
+        android:id="@+id/et_unidad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_cantidad"
+        app:layout_constraintStart_toStartOf="@+id/et_cantidad"
+        app:layout_constraintTop_toBottomOf="@+id/et_cantidad" />
+
+    <Button
+        android:id="@+id/btnguarda"
+        android:layout_width="125dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#31D304"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_nolista"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/et_modulo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_proyecto"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:text="Proyecto"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/et_nolista"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
